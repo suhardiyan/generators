@@ -1,10 +1,10 @@
 <?php
 
-namespace Laracademy\Generators;
+namespace Suhardiyan\Generators;
 
 /*
  *
- * @author Michael McMullen <michael@laracademy.co>
+ * @author Michael McMullen <michael@suhardiyan.co>
  */
 
 use Illuminate\Support\ServiceProvider;
@@ -33,10 +33,10 @@ class GeneratorsServiceProvider extends ServiceProvider
 
     private function registerModelGenerator()
     {
-        $this->app->singleton('command.laracademy.generate', function ($app) {
-            return $app['Laracademy\Generators\Commands\ModelFromTableCommand'];
+        $this->app->singleton('command.suhardiyan.generate', function ($app) {
+            return $app['Suhardiyan\Generators\Commands\ModelFromTableCommand'];
         });
 
-        $this->commands('command.laracademy.generate');
+        $this->commands('command.suhardiyan.generate');
     }
 }

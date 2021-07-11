@@ -1,6 +1,6 @@
 <?php
 
-namespace Laracademy\Generators\Commands;
+namespace Suhardiyan\Generators\Commands;
 
 use Illuminate\Support\Facades\{DB, Schema};
 use Illuminate\Support\Str;
